@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kota Banjar</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+                "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            padding: 50px;
+            text-align: center;
+            background-color: lightblue;
+        }
+
+        header h2 {
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            letter-spacing: .4em;
+            text-transform: uppercase;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #1231aa;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+
+        nav ul li {
+            float: left;
+            margin: 0 15px;
+            list-style: none;
+        }
+
+        nav ul li a,
+        aside a {
+            text-decoration: none;
+        }
+
+        nav ul li a {
+            color: white;
+            cursor: pointer;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            width: 100%;
+            height: 100vh;
+        }
+
+        article {
+            overflow: auto;
+            float: left;
+            width: 70%;
+            height: 100%;
+            padding: 0 100px;
+        }
+
+        article div {
+            padding-top: 50px;
+        }
+
+        article div h1 {
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        article div p {
+            text-align: justify;
+            line-height: 1.5em;
+        }
+
+        article .hidden {
+            display: none;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-spacing: 0;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        aside {
+            float: left;
+            width: 30%;
+            height: 100%;
+            /* background-color: burlywood; */
+            padding: 15px;
+            text-align: center;
+        }
+
+        footer {
+            float: left;
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Awal Header -->
+    <header>
+        <h2>Kota Banjar</h2>
+        <p>Somahna Bagja Di Buana</p>
+    </header>
+    <!-- Akhir Header -->
+
+    <!-- Awal Navigasi -->
+    <nav>
+        <ul>
+            <li><a id="tombol-sejarah">Sejarah<a></li>
+            <li><a id="tombol-geografi">Geografi</a></li>
+            <li><a id="tombol-pemerintahan">Pemerintahan</a></li>
+            <li><a id="tombol-pariwisata">Pariwisata</a></li>
+        </ul>
+    </nav>
+    <!-- Akhir Navigasi -->
+
+    <!-- Awal Section -->
+    <section>
+        <!-- Awal Artikel -->
+        <article>
+            <!-- Awal Sejarah -->
+            <div id="sejarah" class="">
+                <h1>Sejarah</h1>
+                <p>Sejarah Pembentukan Kota Banjar tidak terlepas dari sejarah berdirinya Pemerintah Kabupaten Ciamis di
+                    masa lalu. Rangkaian waktu perjalanan berdirinya Pemerintah Kabupaten Ciamis sampai terbentuknya
+                    Pemerintah Kota Banjar melalui tahapan-tahapan sebagai berikut :</p>
+                <br>
+                <h3>Banjar dalam sejarah perkembangannya</h3>
+                <p>Banjar sejak didirikan sampai sekarang mengalami beberapa kali perubahan status, untuk lebih jelas
+                    perkembangannya sebagai berikut :</p>
+                <ul style="margin-left: 20px;">
+                    <li>
+                        <p>Banjar sebagai Ibukota Kecamatan, dari tahun 1937 sampai tahun 1940.</p>
+                    </li>
+                    <li>
+                        <p>Banjar sebagai Ibukota Kawedanaan, dari tahun 1941 sampai dengan 1 Maret 1992.</p>
+                    </li>
+                    <li>
+                        <p>Banjar sebagai Kota Administratif dari tahun 1992 sampai dengan tanggal 20 Februari 2003.</p>
+                    </li>
+                    <li>Sebagai Kotamadya sejak tanggal 21 Februari 2003.</li>
+                </ul>
+                <br>
+                <h3>Terbentuknya Banjar Kota Administratif</h3>
+                <p>Perkembangan dan kemajuan wilayah Provinsi Jawa Barat pada umumnya dan Kabupaten Ciamis khususnya
+                    wilayah Kecamatan Banjar, memerlukan pengaturan penyelenggaraan pemerintahan secara khusus guna
+                    menjamin terpenuhinya tuntutan perkembangan dan kemajuan sesuai dengan aspirasi masyarakat di
+                    Wilayah Kecamatan Banjar.</p>
+                <br>
+                <p>Wilayah Kecamatan Banjar menunjukan perkembangan dan kemajuan dengan ciri dan sifat kehidupan
+                    perkotaan, atas hal tersebut wilayah Banjar perlu ditingkatkan menjadi Kota Administratif yang
+                    memerlukan pembinaan serta pengaturan pemerintahan, pembangunan dan kemasyarakatan secara khusus.
+                </p>
+                <br>
+                <p>Akhirnya tahun 1992 Pemerintah membentuk Banjar Kota Administratif berdasarkan Peraturan Pemerintah
+                    Nomor 54 Tahun 1991 tentang Pembentukan Banjar Kota Administratif yang diresmikan oleh Menteri Dalam
+                    Negeri pada tanggal 2 Maret 1992.</p>
+                <br>
+                <p>Beberapa alasan mengapa Banjar menjadi Kota administratif antara lain : Keadaan Geografis, Demografis
+                    dan Sosiologis kehidupan masyarakat yang perkembangannya sangat pesat sehingga memerlukan
+                    peningkatan pelayanan dan pengaturan dalam penyelenggaraan pemerintahan.</p>
+                <br>
+                <h3>Terbentuknya Kota Banjar</h3>
+                <p>Semakin pesatnya perkembangan dan tuntutan aspirasi masyarakat yang semakin mendesak agar Banjar Kota
+                    Administratif segera ditingkatkan menjadi Pemerintah Kota dimana hal ini pun sejalan dengan tuntutan
+                    dan Undang-Undang Nomor 22 Tahun 1999 tentang Pemerintahan Daerah dan disisi lain Pemerintah
+                    Kabupaten Ciamis bersama-sama Pemerintah Provinsi Jawa Barat memperhatikan perkembangan tersebut dan
+                    mengusulkan kepada Pemerintah Pusat dan Dewan Perwakilan Rakyat Republik Indonesia.</p>
+                <br>
+                <p>Momentum peresmian Kota Banjar yang diikuti pelantikan Penjabat Walikota Banjar dapat dijadikan suatu
+                    landasan yang bersejarah dan tepat untuk dijadikan Hari jadi Kota Banjar.</p>
+            </div>
+            <!-- Akhir Sejarah -->
+
+            <!-- Awal Geografi -->
+            <div id="geografi" class="hidden">
+                <h1>Geografi</h1>
+                <p>Kota Banjar memiliki landscape yang beragam. Bagian utara, selatan dan barat kota merupakan wilayah
+                    berbukit-bukit. Kota ini dibelah oleh Sungai Citanduy dibagian tengah. Terdapat pula sebagian
+                    kawasan pertanian, terutama dibagian pinggiran kota.</p>
+                <br>
+                <p>Zona Pertanian di Kota Banjar terdiri dari persawahan, perkebunan jati yang dikelola oleh Perhutani
+                    dan hutan hujan tropis biasa. Pada tahun 2006, pembangunan Balai Kota baru dan markas Kepolisian
+                    Resort baru di Kecamatan Purwaharja mengharuskan pemotongan sejumlah bukit dan penggundulan hutan
+                    jati.</p>
+                <br>
+                <h3>Batas Wilayah</h3>
+                <p>Kota Banjar dibatasi oleh beberapa kecamatan dalam wilayah Kabupaten Ciamis, Kabupaten Cilacap dan
+                    sekitarnya. Berikut merupakan batas wilayah Kota Banjar:</p>
+                <br>
+                <table>
+                    <tr>
+                        <td>Utara</td>
+                        <td>Kecamatan Cisaga, dan Kecamatan Dayeuhluhur</td>
+                    </tr>
+                    <tr>
+                        <td>Timur</td>
+                        <td>Kecamatan Wanareja</td>
+                    </tr>
+                    <tr>
+                        <td>Selatan</td>
+                        <td>Kecamatan Lakbok dan Kecamatan Pamarican</td>
+                    </tr>
+                    <tr>
+                        <td>Barat</td>
+                        <td>Kecamatan Cimaragas dan Kecamatan Cijeungjing</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- Akhir Geografi -->
+
+            <!-- Awal Pemerintahan -->
+            <div id="pemerintahan" class="hidden">
+                <h1>Pemerintahan</h1>
+                <h3>Daftar Walikota</h3>
+                <table width="100%" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th colspan="2">Wali Kota</th>
+                            <th>Awal Menjabat</th>
+                            <th>Akhir Menjabat</th>
+                            <th>Wakil Wali Kota</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>-</td>
+                            <td></td>
+                            <td>H.
+                                M. Effendi Taufikurrahman
+                                S.H., M.H.
+                                (Pejabat)</td>
+                            <td>21 Februari 2003</td>
+                            <td>5 Januari 2004</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="Herman_Sutrisno.jpg" alt="Wali Kota Banjar Herman Sutrisno"></td>
+                            <td>dr.
+                                Herman Sutrisno
+                                M.M.</td>
+                            <td>5 Januari 2004</td>
+                            <td>31 Juli 2008</td>
+                            <td>H.
+                                Akhmad Dimyati
+                                S.Ip.</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td></td>
+                            <td>Drs.
+                                R. Sodikin
+                                SH., M.Si.
+                                (Pelaksana tugas)</td>
+                            <td>1 Agustus 2008</td>
+                            <td>27 Agustus 2008</td>
+                            <td rowspan="2">-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td></td>
+                            <td>Drs. H.
+                                M. Abdul Kohar
+                                (Pejabat)</td>
+                            <td>27 Agustus 2008</td>
+                            <td>4 Desember 2008</td>
+                        </tr>
+                        <tr>
+                            <td>(1)</td>
+                            <td><img src="Herman_Sutrisno.jpg" alt="Wali Kota Banjar Herman Sutrisno"></td>
+                            <td>dr.
+                                Herman Sutrisno
+                                M.M.</td>
+                            <td>4 Desember 2008</td>
+                            <td>4 Desember 2013</td>
+                            <td>H.
+                                Akhmad Dimyati
+                                S.Ip.</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">2</td>
+
+                            <td rowspan="2"><img src="Wali_Kota_Banjar_Ade_Uu_Sukaesih.jpg"
+                                    alt="Wali Kota Banjar Ade Uu Sukaesih"></td>
+                            <td rowspan="2">Hj.
+                                Ade Uu Sukaesih
+                                S.Ip., M.Si.</td>
+                            <td>4 Desember 2013</td>
+                            <td>4 Desember 2018</td>
+                            <td>Darmadji Prawirasetia</td>
+                        </tr>
+                        <tr>
+                            <td>4 Desember 2018</td>
+                            <td>Petahana</td>
+                            <td>Nana Suryana</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Akhir Pemerintahan -->
+
+            <!-- Awal pariwisata -->
+            <div id="pariwisata" class="hidden">
+                <h1>Pariwisata</h1>
+                <p>Pariwisata Kota Banjar sekarang bertambah dengan dibangunnya Waterpark dan Setu Leutik. Keberadaan
+                    dua objek wisata tersebut semakin menambah objek andalan pariwisata Kota Banjar. Waterpark yang
+                    berada di Parunglesang dilalui oleh lalu lintas Jalur Selatan Jawa.</p>
+                <br>
+                <h3>Wisata Air</h3>
+                <ol>
+                    <li>Objek Wisata Danau Mustika</li>
+                    <li>Objek Wisata Waterpark Banjar</li>
+                    <li>Objek Wisata Setu Leutik</li>
+                </ol>
+                <br>
+                <h3>Wisata Sejarah</h3>
+                <ol>
+                    <li>Museum Rawa Onom</li>
+                    <li>Museum Kokoplak</li>
+                    <li>Terowongan Binangun</li>
+                    <li>Lembah Pajamben</li>
+                </ol>
+                <br>
+                <h3>Wisata Kuliner</h3>
+                <ol>
+                    <li>Jajanan Khas Sunda</li>
+                    <li>Jajanan Seafood</li>
+                    <li>Jajanan Oriental</li>
+                </ol>
+                <br>
+                <p>Sebagai penunjang sarana wisata terdapat juga akomodasi berupa:</p>
+                <ul>
+                    <li>9 buah berupa hotel dan penginapan dengan kapasitas kamar 159 buah dan tempat tidur sebanyak 305
+                        buah</li>
+                    <li>1 buah Rest Area</li>
+                    <li>1 buah stasiun kereta api, yaitu Stasiun Banjar</li>
+                    <li>Terminal Bus yang berdekatan dengan Objek Wisata Waterpark.</li>
+                </ul>
+            </div>
+            <!-- Akhir Pariwisata -->
+        </article>
+        <!-- Akhir Artikel -->
+
+        <!-- Awal Sisi Kanan -->
+        <aside>
+            <img src="logo_kota_banjar.jpg" alt=" Logo Kota Banjar">
+            <h2>Kota Banjar</h2>
+            <h4>Jawa Barat</h4>
+            <h4>Indonesia</h4>
+            <hr>
+            <h4>Luas</h4>
+            <p>113,00 km2 (43,63 sq mi)</p>
+            <h4>Populasi</h4>
+            <p>205.482 jiwa</p>
+            <hr>
+            <h4>Image Map</h4>
+            <img src="peta_kota_banjar.png" alt="Peta Kota Banjar" usemap="#map">
+            <map name="map">
+                <area shape="circle" coords="79,57,10" href="https://banjarkota.go.id/" target="_blank"
+                    alt="Kota Banjar" title="Kota Banjar">
+            </map>
+            <hr>
+            <h4>Iframe Web <br>Pemerintah Kota Banjar</h4>
+            <iframe src="https://banjarkota.go.id/" name="web-kota-banjar" title="Web Pemerintah Kota Banjar"></iframe>
+            <p><a href="https://banjarkota.go.id/" target="web-kota-banjar">banjarkota.go.id</a></p>
+        </aside>
+        <!-- Akhir Sisi Kanan -->
+
+    </section>
+    <!-- Akhir Section -->
+
+    <!-- Awal Footer -->
+    <footer>
+        <p>&copy; Ma'isy Yazid Imaaduddin 2021</p>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <script>
+        const tSejarah = document.getElementById("tombol-sejarah");
+        const tGeografi = document.getElementById("tombol-geografi");
+        const tPemerintahan = document.getElementById("tombol-pemerintahan");
+        const tPariwisata = document.getElementById("tombol-pariwisata");
+
+        const sejarah = document.getElementById("sejarah");
+        const geografi = document.getElementById("geografi");
+        const pemerintahan = document.getElementById("pemerintahan");
+        const pariwisata = document.getElementById("pariwisata");
+
+        tSejarah.onclick = () => {
+            if (sejarah.classList.contains('hidden')) {
+                sejarah.classList.remove('hidden');
+            }
+            geografi.classList.add('hidden');
+            pemerintahan.classList.add('hidden');
+            pariwisata.classList.add('hidden');
+        }
+
+        tGeografi.onclick = () => {
+            if (geografi.classList.contains('hidden')) {
+                geografi.classList.remove('hidden');
+            }
+            sejarah.classList.add('hidden');
+            pemerintahan.classList.add('hidden');
+            pariwisata.classList.add('hidden');
+        }
+
+        tPemerintahan.onclick = () => {
+            if (pemerintahan.classList.contains('hidden')) {
+                pemerintahan.classList.remove('hidden');
+            }
+            sejarah.classList.add('hidden');
+            geografi.classList.add('hidden');
+            pariwisata.classList.add('hidden');
+        }
+
+        tPariwisata.onclick = () => {
+            if (pariwisata.classList.contains('hidden')) {
+                pariwisata.classList.remove('hidden');
+            }
+            sejarah.classList.add('hidden');
+            geografi.classList.add('hidden');
+            pemerintahan.classList.add('hidden');
+        }
+    </script>
+</body>
+
+</html>
