@@ -6,137 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kota Banjar</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-                "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-        }
-
-        header {
-            padding: 50px;
-            text-align: center;
-            background-color: lightblue;
-        }
-
-        header h2 {
-            font-size: 40px;
-            text-transform: uppercase;
-        }
-
-        header p {
-            letter-spacing: .4em;
-            text-transform: uppercase;
-        }
-
-        nav {
-            width: 100%;
-            background-color: #1231aa;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            padding: 15px 0;
-        }
-
-        nav ul li {
-            float: left;
-            margin: 0 15px;
-            list-style: none;
-        }
-
-        nav ul li a,
-        aside a {
-            text-decoration: none;
-        }
-
-        nav ul li a {
-            color: white;
-            cursor: pointer;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            width: 100%;
-            height: 100vh;
-        }
-
-        article {
-            overflow: auto;
-            float: left;
-            width: 70%;
-            height: 100%;
-            padding: 0 100px;
-        }
-
-        article div {
-            padding-top: 50px;
-        }
-
-        article div h1 {
-            font-size: 40px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        article div p {
-            text-align: justify;
-            line-height: 1.5em;
-        }
-
-        article .hidden {
-            display: none;
-        }
-
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-spacing: 0;
-        }
-
-        th,
-        td {
-            padding: 10px;
-        }
-
-        aside {
-            float: left;
-            width: 30%;
-            height: 100%;
-            /* background-color: burlywood; */
-            padding: 15px;
-            text-align: center;
-        }
-
-        footer {
-            float: left;
-            width: 100%;
-            padding: 50px 0;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Awal Header -->
     <header>
+        <img src="img/logo-kota-banjar.png" width="100">
         <h2>Kota Banjar</h2>
         <p>Somahna Bagja Di Buana</p>
     </header>
     <!-- Akhir Header -->
 
     <!-- Awal Navigasi -->
-    <nav>
+    <nav id="navigasi">
         <ul>
             <li><a id="tombol-sejarah">Sejarah<a></li>
             <li><a id="tombol-geografi">Geografi</a></li>
@@ -269,7 +152,7 @@
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td><img src="Herman_Sutrisno.jpg" alt="Wali Kota Banjar Herman Sutrisno"></td>
+                            <td><img src="img/Herman_Sutrisno.jpg" alt="Wali Kota Banjar Herman Sutrisno"></td>
                             <td>dr.
                                 Herman Sutrisno
                                 M.M.</td>
@@ -301,7 +184,7 @@
                         </tr>
                         <tr>
                             <td>(1)</td>
-                            <td><img src="Herman_Sutrisno.jpg" alt="Wali Kota Banjar Herman Sutrisno"></td>
+                            <td><img src="img/Herman_Sutrisno.jpg" alt="Wali Kota Banjar Herman Sutrisno"></td>
                             <td>dr.
                                 Herman Sutrisno
                                 M.M.</td>
@@ -314,7 +197,7 @@
                         <tr>
                             <td rowspan="2">2</td>
 
-                            <td rowspan="2"><img src="Wali_Kota_Banjar_Ade_Uu_Sukaesih.jpg"
+                            <td rowspan="2"><img src="img/Wali_Kota_Banjar_Ade_Uu_Sukaesih.jpg"
                                     alt="Wali Kota Banjar Ade Uu Sukaesih"></td>
                             <td rowspan="2">Hj.
                                 Ade Uu Sukaesih
@@ -342,9 +225,12 @@
                 <br>
                 <h3>Wisata Air</h3>
                 <ol>
-                    <li>Objek Wisata Danau Mustika</li>
+                    <li>Objek Wisata Situ Mustika</li>
+                    <img src="img/situ-mustika-banjar.jpg" alt="Situ Mustika">
                     <li>Objek Wisata Waterpark Banjar</li>
-                    <li>Objek Wisata Setu Leutik</li>
+                    <img src="img/wp.jpg" alt="WaterPark Banjar">
+                    <li>Objek Wisata Situ Leutik</li>
+                    <img src="img/situ-leutik.jpg" alt="Situ Leutik">
                 </ol>
                 <br>
                 <h3>Wisata Sejarah</h3>
@@ -377,26 +263,41 @@
 
         <!-- Awal Sisi Kanan -->
         <aside>
-            <img src="logo_kota_banjar.jpg" alt=" Logo Kota Banjar">
-            <h2>Kota Banjar</h2>
-            <h4>Jawa Barat</h4>
-            <h4>Indonesia</h4>
+            <div class="kota">
+                <img src="img/logo-kota-banjar.png" alt=" Logo Kota Banjar" width="100">
+                <h2>Kota Banjar</h2>
+                <h4>Jawa Barat</h4>
+                <h4>Indonesia</h4>
+            </div>
+
             <hr>
-            <h4>Luas</h4>
-            <p>113,00 km2 (43,63 sq mi)</p>
-            <h4>Populasi</h4>
-            <p>205.482 jiwa</p>
+
+            <div class="detail">
+                <h4>Luas</h4>
+                <p>113,00 km2 (43,63 sq mi)</p>
+                <h4>Populasi</h4>
+                <p>205.482 jiwa</p>
+            </div>
+
             <hr>
-            <h4>Image Map</h4>
-            <img src="peta_kota_banjar.png" alt="Peta Kota Banjar" usemap="#map">
-            <map name="map">
-                <area shape="circle" coords="79,57,10" href="https://banjarkota.go.id/" target="_blank"
-                    alt="Kota Banjar" title="Kota Banjar">
-            </map>
+
+            <div class="imap">
+                <h4>Image Map</h4>
+                <img src="img/peta_kota_banjar.png" alt="Peta Kota Banjar" usemap="#map">
+                <map name="map">
+                    <area shape="circle" coords="79,57,10" href="https://banjarkota.go.id/" target="_blank"
+                        alt="Kota Banjar" title="Kota Banjar">
+                </map>
+            </div>
+
             <hr>
-            <h4>Iframe Web <br>Pemerintah Kota Banjar</h4>
-            <iframe src="https://banjarkota.go.id/" name="web-kota-banjar" title="Web Pemerintah Kota Banjar"></iframe>
-            <p><a href="https://banjarkota.go.id/" target="web-kota-banjar">banjarkota.go.id</a></p>
+
+            <div class="iframe">
+                <h4>Iframe Web <br>Pemerintah Kota Banjar</h4>
+                <iframe src="https://banjarkota.go.id/" name="web-kota-banjar" title="Web Pemerintah Kota Banjar"></iframe>
+                <p><a href="https://banjarkota.go.id/" target="web-kota-banjar">banjarkota.go.id</a></p>
+            </div>
+
         </aside>
         <!-- Akhir Sisi Kanan -->
 
@@ -409,53 +310,7 @@
     </footer>
     <!-- Akhir Footer -->
 
-    <script>
-        const tSejarah = document.getElementById("tombol-sejarah");
-        const tGeografi = document.getElementById("tombol-geografi");
-        const tPemerintahan = document.getElementById("tombol-pemerintahan");
-        const tPariwisata = document.getElementById("tombol-pariwisata");
-
-        const sejarah = document.getElementById("sejarah");
-        const geografi = document.getElementById("geografi");
-        const pemerintahan = document.getElementById("pemerintahan");
-        const pariwisata = document.getElementById("pariwisata");
-
-        tSejarah.onclick = () => {
-            if (sejarah.classList.contains('hidden')) {
-                sejarah.classList.remove('hidden');
-            }
-            geografi.classList.add('hidden');
-            pemerintahan.classList.add('hidden');
-            pariwisata.classList.add('hidden');
-        }
-
-        tGeografi.onclick = () => {
-            if (geografi.classList.contains('hidden')) {
-                geografi.classList.remove('hidden');
-            }
-            sejarah.classList.add('hidden');
-            pemerintahan.classList.add('hidden');
-            pariwisata.classList.add('hidden');
-        }
-
-        tPemerintahan.onclick = () => {
-            if (pemerintahan.classList.contains('hidden')) {
-                pemerintahan.classList.remove('hidden');
-            }
-            sejarah.classList.add('hidden');
-            geografi.classList.add('hidden');
-            pariwisata.classList.add('hidden');
-        }
-
-        tPariwisata.onclick = () => {
-            if (pariwisata.classList.contains('hidden')) {
-                pariwisata.classList.remove('hidden');
-            }
-            sejarah.classList.add('hidden');
-            geografi.classList.add('hidden');
-            pemerintahan.classList.add('hidden');
-        }
-    </script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
