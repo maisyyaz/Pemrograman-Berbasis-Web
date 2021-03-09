@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1366px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    overflow: hidden;
+}
+
+aside {
+    width: 20%;
+    padding: 0;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li {
+    margin: 10px;
+    width: 100%;
+    opacity: .7;
+}
+
+aside ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    /* background-color: red; */
+    /* overflow: auto; */
+}
+
+aside ul li:hover {
+    opacity: 1;
+}
+
+.main {
+    display: flex;
+}
+
+section {
+    height: 100%;
+    position: relative;
+    padding: 25px 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.active {
+    opacity: 1;
+    border-bottom: 1px solid grey;
+}
+
+.content {
+    overflow: hidden;
+    height: 83vh;
+    width: 80%;
+
+}
+
+.content .left {
+    width: 60%;
+    /* text-align: center; */
+}
+
+.content .left p {
+    font-size: 1.2em;
+}
+
+.content .right {
+    width: 40%;
+    height: 100%;
+    padding: 25px;
+    background-color: dimgray;
+    /* opacity: .8; */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+}
+.content .right .scroll {
+    overflow-y: auto;
+}
+.content .right h2 {
+    margin-bottom: 15px;
+}
+
+.content .right p {
+    text-align: justify;
+    line-height: 1.5em;
+    letter-spacing: 1.2px;
+    padding-right: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7vh;
+    background-color: dimgray;
+    /* opacity: .8; */
+    color: #fff;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer span {
+    margin: 5px;
+}
+
+ul, ol {
+    margin-left: 2em;
+    line-height: 1.5em;
+    letter-spacing: 1.2px;
+}
