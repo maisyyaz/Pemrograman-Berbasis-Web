@@ -1,4 +1,8 @@
 @media(max-width: 670px) {
+    body {
+        max-width: 670px;
+    }
+
     header {
         position: fixed;
         width: 100%;
