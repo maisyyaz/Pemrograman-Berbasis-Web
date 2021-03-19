@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-1: #ccffbd;
+    --color-2: #7eca9c;
+    --color-3: #40394a;
+    --color-4: #1c1427;
+    --color-5: #fff;
+    --col-100: 100%;
+    --col-75: 75%;
+    --col-50: 50%;
+    --col-25: 25%;
+    --col-0: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1300px;
+    font-family: Poppins, serif;
+    width: var(--col-100);
+    padding: 0 10%;
+    margin: auto;
+    color: var(--color-5);
+}
+
+img {
+    width: 200px;
+    height: 150px;
+}
+
+.container {
+    background-color: var(--color-2)
+}
+
+.header {
+    padding: 25px 15px;
+}
+
+.header h1 {
+    color: var(--color-5);
+    text-align: center;
+}
+
+.menu {
+    background-color: var(--color-1);
+    width: var(--col-100);
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    box-shadow: 0 9px 8px -4px rgba(0,0,0,.5);
+}
+
+.menu ul li {
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    color: var(--color-3);
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: var(--color-3);
+    color: var(--color-5);
+}
+
+.main {
+    width: var(--col-100);
+    padding: 15px;
+    display: flex;
+}
+
+.content {
+    width: var(--col-75);
+    padding: 0 15px;
+}
+
+section {
+    color: var(--color-4);
+    margin: 25px 0;
+    display: flex;
+    background-color: var(--color-5);
+    border-radius: 5px;
+    padding: 25px 15px;
+    box-shadow: 0 7px 8px 0 rgba(0,0,0,.5);
+}
+
+section .image {
+    height: 100%;
+}
+
+section .text {
+    padding-left: 25px;
+    width: var(--col-75);
+}
+
+section .text p {
+    font-size: .9em;
+}
+
+section .text a {
+    color: var(--color-5);
+    float: right;
+    display: inline-block;
+    padding: 10px;
+    background-color: var(--color-3);
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: .8em;
+    margin-top: 20px;
+}
+
+.adv {
+    width: var(--col-25);
+    padding: 15px;
+}
+
+.adv img {
+    width: var(--col-100);
+    height: var(--col-100);
+    border-radius: 5px;
+}
+
+.footer {
+    color: var(--color-5);
+    padding: 15px;
+    text-align: center;
+    background-color: var(--color-3);
+}

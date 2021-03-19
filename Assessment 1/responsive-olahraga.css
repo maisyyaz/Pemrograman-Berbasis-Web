@@ -1,0 +1,9 @@
+@media (max-width: 700px) {
+    .main {
+        padding: 15px 25px;
+    }
+
+    .main .isi {
+        padding: 25px;
+    }
+}
